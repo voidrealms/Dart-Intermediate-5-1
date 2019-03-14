@@ -1,5 +1,3 @@
-
-
 main(List<String> arguments) {
 
   List<int> numbers = new List<int>();
@@ -16,12 +14,13 @@ main(List<String> arguments) {
 
   addNumbers<int>(1, 2);
   addNumbers<double>(1.0, 2.09);
-  addNumbers<String>('hello ', 'world');
+  //addNumbers<String>('hello ', 'world'); //wont work as its a string
 }
 
 //Simple Example
 void add<T>(T a, T b) {
-  print(a + b);
+  // + is not defined for generics so we just use toString
+  print(a.toString() + b.toString());
 }
 
 //More complex
