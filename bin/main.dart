@@ -1,10 +1,10 @@
 main(List<String> arguments) {
 
-  List<int> numbers = new List<int>();
+  List<int> numbers = [];//new List<int>();
   numbers.addAll([1,2,3,4]);
   print(numbers);
 
-  List<String> strings = new List<String>();
+  List<String> strings = [];//new List<String>();
   strings.addAll(['a',  'b', 'c']);
   print(strings);
 
